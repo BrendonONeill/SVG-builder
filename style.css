@@ -1,0 +1,79 @@
+*,*::after,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+:root
+{
+    --nav-colour:#335c81;
+    --form-colour:#5899e2;
+    --form-chunk: #2D4F74;
+    --svg-bg-colour:#EFEFEF;
+    --border-colour: black;
+}
+
+footer, nav
+{
+    padding: 1rem;
+    background-color: var(--nav-colour);
+    color: var(--svg-bg-colour);
+}
+.main-container
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 88vh;
+    width: 100%;
+}
+
+form
+{
+    background-color: var(--form-colour);
+    display: flex;
+    padding: 1rem;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+label
+{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.form-input
+{
+    background-color: var(--svg-bg-colour);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    width: 100px;
+}
+
+.form-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--form-chunk);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
+}
+
+.svg-block
+{
+    background-color: var(--svg-bg-colour);
+}
+
+
+
